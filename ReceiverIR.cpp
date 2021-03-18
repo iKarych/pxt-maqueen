@@ -129,7 +129,7 @@ void ReceiverIR::isr_fall(void) {
                     /*
                      * NEC.
                      */
-                    data.format = RemoteIR::NEC;
+                    data.format = RemoteIR::AEHA;
                     work.state = Receiving;
                     data.bitcount = 0;
                 } else if (InRange(a, RemoteIR::TUS_NEC * 16) && InRange(b, RemoteIR::TUS_NEC * 4)) {
